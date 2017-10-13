@@ -90,8 +90,8 @@ Post : {
  Comments är ett nested object i post objectet
  
  - En användare kan skriva en kommentar på inlägg
-  - I inläggen finns det ett input fält där en användare kan skriva in en kommentar och trycka på send
-  - Då letas rätt inlägg upp i firebase databasen och ett comment object läggs till i det korrekta inlägget
-  - Efter att det är tillagt i databasen updateras redux state med comment objektet och vyn updateras
+   - I inläggen finns det ett input fält där en användare kan skriva in en kommentar och trycka på send
+   - Då letas rätt inlägg upp i firebase databasen och ett comment object läggs till i det korrekta inlägget
+   - Efter att det är tillagt i databasen updateras redux state med comment objektet och vyn updateras
 
  
