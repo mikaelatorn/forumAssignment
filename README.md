@@ -16,13 +16,15 @@
  
 Data schema för användarna : 
  
-user : {
-   email: string
-   uid: string
-   isAdmin : bool
-   username: string
-}
+ User : {
  
+    email: { string } ,
+    uid: { string }, 
+    isAdmin : { bool },
+    username: { string },
+   
+}
+
 
 - Användare kan Registrera sig genom att gå till fliken Registrera
     - Användaren skriver in sitt email, password och username
@@ -56,11 +58,12 @@ user : {
 Data schema för inlägg : 
 
 Post : {
-    uid: string (uid för author)
-    id: string
-    author: string (username av author)
-    title: string
-    text: string
+
+    uid:  string (uid för author) ,
+    id:  string ,
+    author: string (username av author),
+    title: string,
+    text: string,
     comments: {
       id: string key,
       comment: string,
@@ -83,7 +86,7 @@ Post : {
   - När användaren trycker på delete post så skickas det till firebase remove() som tar bort den post
   - När inlägget tas bort från firebase databasen så körs firebase event listener child_removed som tar bort samma inlägg i redux state och sidan updateras med att inlägget tas bort
   
- ######Comments
+ ###### Comments
  Comments är ett nested object i post objectet
  
  - En användare kan skriva en kommentar på inlägg
