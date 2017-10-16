@@ -1,5 +1,7 @@
 # forumAssignment
 
+Uppgift i Avancerad webbutveckling 2 på Lernia Yrkeshögskola - Javascript Front-end utveckling. 
+Den här uppgiften är ett forum där användare kan registrera sig och skriva inlägg samt skriva kommentarer på andras inlägg.
 
 #### Dokumentation : 
  
