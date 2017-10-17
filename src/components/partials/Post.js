@@ -92,7 +92,7 @@ class Post extends React.Component {
               {this.props.user.uid === this.props.post.uid && !this.props.user.isAdmin &&
                 <Btn onClick={this.deletePost} size="xsmall" name="Delete Post" bsStyle="link"><Glyphicon glyph="remove" /></Btn>
               }
-              {this.props.user.uid === this.props.post.uid && this.props.user.isAdmin &&
+              {this.props.user.isAdmin &&
                 <Btn onClick={this.deletePost} size="xsmall" name="Delete Post" bsStyle="link"><Glyphicon glyph="remove" /></Btn>
               }
               {/*<Media.Left>
